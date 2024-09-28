@@ -60,7 +60,7 @@ with tab3:
         staff_ids=df_sche['スタッフID'].unique()
         for i,row in df_sche.iterrows():
             staff_penalty[row["スタッフID"]] = st.slider(
-                f"{row['スタッフID']}の希望違反ペナルティ",
+                f"{row['スタッフID']}の希望違反ペナルティ(工事中のため反映せず)",
                 0,  # 最小値
                 100,  # 最大値
                 50,  # デフォルト値は50
