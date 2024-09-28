@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import pulp
 from matplotlib import pyplot as plt
-import seaborn as sns
+# import seaborn as sns
 
 plt.rcParams['font.family'] = 'TakaoGothic'
 
