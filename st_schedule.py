@@ -56,10 +56,10 @@ with tab3:
     ###########
     if (chk1 + chk2)==2:
 
-        staff_penalty={}
-        staff_ids=df_sche['スタッフID'].unique()
+        staff_ids={}
+        # staff_ids=df_sche['スタッフID'].unique()
         for i,row in df_sche.iterrows():
-            staff_penalty[row["スタッフID"]] = st.slider(
+            staff_ids[row["スタッフID"]] = st.slider(
                 f"{row['スタッフID']}の希望違反ペナルティ(工事中のため反映せず)",
                 0,  # 最小値
                 100,  # 最大値
